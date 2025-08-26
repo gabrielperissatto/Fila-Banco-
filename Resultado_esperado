@@ -1,0 +1,272 @@
+RESULTADO ESPERADO APÓS RODAS O DOCTEST DO CÓDIGO 
+
+COMANDO PARA EXECUTAR O DOCTEST ->>>>> PS C:\Users\ELIZEGILLE\Desktop\PASTA_TESTE> python -m doctest -v a.py   
+
+
+Trying:
+    fila = Fila()
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(1,31))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(2,32))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(3,44))
+Expecting nothing
+ok
+Trying:
+    fila.desenfileira()
+Expecting nothing
+ok
+Trying:
+    print(fila)
+Expecting:
+    [Pessoa(indice=2, idade=32, passagem=0), Pessoa(indice=3, idade=44, passagem=0)]     
+ok
+Trying:
+    fila.desenfileira()
+Expecting nothing
+ok
+Trying:
+    print(fila)
+Expecting:
+    [Pessoa(indice=3, idade=44, passagem=0)]
+ok
+Trying:
+    fila.desenfileira()
+Expecting nothing
+ok
+Trying:
+    print(fila)
+Expecting:
+    []
+ok
+Trying:
+    fila.desenfileira()
+Expecting:
+    Traceback (most recent call last):
+        ...
+    ValueError: fila vazia
+ok
+Trying:
+    fila = Fila()
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(1, 65))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(2, 25))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(3, 72))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(4, 31))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(5, 80))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(6, 18))
+Expecting nothing
+ok
+Trying:
+    print(fila)
+Expecting:
+    [Pessoa(indice=1, idade=65, passagem=0), Pessoa(indice=3, idade=72, passagem=0), Pessoa(indice=5, idade=80, passagem=0), Pessoa(indice=2, idade=25, passagem=0), Pessoa(indice=4, idade=31, passagem=0), Pessoa(indice=6, idade=18, passagem=0)]
+ok
+Trying:
+    fila2 = Fila()
+Expecting nothing
+ok
+Trying:
+    fila2.enfileira(Pessoa(1, 25))
+Expecting nothing
+ok
+Trying:
+    fila2.enfileira(Pessoa(2, 75))
+Expecting nothing
+ok
+Trying:
+    fila2.enfileira(Pessoa(3, 62))
+Expecting nothing
+ok
+Trying:
+    fila2.enfileira(Pessoa(4, 18))
+Expecting nothing
+ok
+Trying:
+    fila2.enfileira(Pessoa(5, 19))
+Expecting nothing
+ok
+Trying:
+    fila2.enfileira(Pessoa(6, 20))
+Expecting nothing
+ok
+Trying:
+    print(fila2)
+Expecting:
+    [Pessoa(indice=2, idade=75, passagem=0), Pessoa(indice=3, idade=62, passagem=0), Pessoa(indice=1, idade=25, passagem=0), Pessoa(indice=4, idade=18, passagem=0), Pessoa(indice=5, idade=19, passagem=0), Pessoa(indice=6, idade=20, passagem=0)]
+ok
+Trying:
+    fila3 = Fila()
+Expecting nothing
+ok
+Trying:
+    fila3.enfileira(Pessoa(1, 20))
+Expecting nothing
+ok
+Trying:
+    fila3.enfileira(Pessoa(2, 30))
+Expecting nothing
+ok
+Trying:
+    fila3.enfileira(Pessoa(3, 40))
+Expecting nothing
+ok
+Trying:
+    print(fila3)
+Expecting:
+    [Pessoa(indice=1, idade=20, passagem=0), Pessoa(indice=2, idade=30, passagem=0), Pessoa(indice=3, idade=40, passagem=0)]
+ok
+Trying:
+    fila = Fila()
+Expecting nothing
+ok
+Trying:
+    fila.numero_elementos()
+Expecting:
+    0
+ok
+Trying:
+    fila.enfileira(Pessoa(1,31,0))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(2,52,0))
+Expecting nothing
+ok
+Trying:
+    fila.numero_elementos()
+Expecting:
+    2
+ok
+Trying:
+    fila.desenfileira()
+Expecting nothing
+ok
+Trying:
+    fila.numero_elementos()
+Expecting:
+    1
+ok
+Trying:
+    fila = Fila()
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(1,50))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(2,33))
+Expecting nothing
+ok
+Trying:
+    fila.enfileira(Pessoa(3,41))
+Expecting nothing
+ok
+Trying:
+    fila.primeiro()
+Expecting:
+    Pessoa(indice=1, idade=50, passagem=0)
+ok
+Trying:
+    fila.desenfileira()
+Expecting nothing
+ok
+Trying:
+    fila.primeiro()
+Expecting:
+    Pessoa(indice=2, idade=33, passagem=0)
+ok
+Trying:
+    fila.desenfileira()
+Expecting nothing
+ok
+Trying:
+    fila.primeiro()
+Expecting:
+    Pessoa(indice=3, idade=41, passagem=0)
+ok
+Trying:
+    fila.desenfileira()
+Expecting nothing
+ok
+Trying:
+    fila.primeiro()
+Expecting:
+    Traceback (most recent call last):
+        ...
+    ValueError: fila vazia
+ok
+Trying:
+    fila = Fila()
+Expecting nothing
+ok
+Trying:
+    fila.vazia()
+Expecting:
+    True
+ok
+Trying:
+    fila.enfileira(Pessoa(1,31,0))
+Expecting nothing
+ok
+Trying:
+    fila.vazia()
+Expecting:
+    False
+ok
+Trying:
+    fila.desenfileira()
+Expecting nothing
+ok
+Trying:
+    fila.vazia()
+Expecting:
+    True
+ok
+12 items had no tests:
+    a
+    a.Fila
+    a.Fila.__init__
+    a.Fila.__str__
+    a.No
+    a.No.__eq__
+    a.No.__init__
+    a.No.__repr__
+    a.Pessoa
+    a.Pessoa.__eq__
+    a.Pessoa.__init__
+    a.Pessoa.__repr__
+5 items passed all tests:
+  11 tests in a.Fila.desenfileira
+  21 tests in a.Fila.enfileira
+   7 tests in a.Fila.numero_elementos
+  11 tests in a.Fila.primeiro
+   6 tests in a.Fila.vazia
+56 tests in 17 items.
+56 passed and 0 failed.
+Test passed.
