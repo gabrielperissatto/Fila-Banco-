@@ -18,3 +18,4 @@ cliente e sua idade.
 7 75
 Se todos os clientes chegaram antes de iniciar o atendimento, a ordem de atendimento seria:
 3, 4, 1, 2, 5, 7, 6.
+![Uploading image.png…]()
