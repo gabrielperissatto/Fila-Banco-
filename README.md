@@ -1,5 +1,5 @@
 # Fila-Banco 
-Uma fila de Banco baseada em uma Lista, first in first out ]
+Uma fila de Banco baseada em uma Lista, first in e first out.  
 
 Em um banco, há um único caixa e os atendimentos seguem a ordem de chegada. Contudo, pessoas
 idosas (60 anos ou mais) têm prioridade e devem ser atendidas antes. Dado que, em alguns dias, o
